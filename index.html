@@ -1,240 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Automotriz | Tu Empresa</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      :root {
-        --color-rojo: #d01318;
-        --color-gris: #f5f5f5;
-        --color-negro: #111111;
-        --color-blanco: #ffffff;
-      }
-      .bg-rojo {
-        background-color: var(--color-rojo);
-      }
-      .text-rojo {
-        color: var(--color-rojo);
-      }
-      .bg-gris {
-        background-color: var(--color-gris);
-      }
-      .bg-negro {
-        background-color: var(--color-negro);
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RO-DES | Repuestos Automotrices</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    :root {
+      --color-rojo: #d01318;
+      --color-gris: #f5f5f5;
+      --color-negro: #111111;
+      --color-blanco: #ffffff;
+    }
+    .bg-rojo { background-color: var(--color-rojo); }
+    .text-rojo { color: var(--color-rojo); }
+    .bg-gris { background-color: var(--color-gris); }
+    .bg-negro { background-color: var(--color-negro); }
+    .animate__animated { opacity: 0; }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 font-sans antialiased">
 
-  <body class="bg-white text-neutral-900 font-sans antialiased">
-    <!-- 1️⃣ Encabezado principal -->
-    <header
-      class="relative bg-[url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center text-white"
-    >
-      <div class="absolute inset-0 bg-black/70"></div>
-      <div class="relative z-10 container mx-auto px-6 py-24 text-center">
-        <img
-          src="images/logo.png"
-          alt="Logo"
-          class="mx-auto mb-6 w-40 md:w-48"
-        />
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">
-          Soluciones automotrices rápidas y confiables
-        </h1>
-        <p class="text-lg md:text-xl mb-8">
-          Comprá, vendé o gestioná tu vehículo con la mejor atención.
-        </p>
-        <a
-          href="https://wa.me/5491112345678?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios."
-          class="bg-rojo hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition"
-          >💬 Escribinos por WhatsApp</a
-        >
-      </div>
-    </header>
+  <!-- 1️⃣ Encabezado principal -->
+  <header class="relative bg-[url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center text-white">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 container mx-auto px-6 py-24 text-center animate__animated" data-animate="animate__fadeInDown">
+      <img src="images/logo.png" alt="Logo" class="mx-auto mb-6 w-40 md:w-48" />
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Soluciones automotrices rápidas y confiables</h1>
+      <p class="text-lg md:text-xl mb-8">Comprá, vendé o gestioná tu vehículo con la mejor atención.</p>
+      <a href="https://wa.me/5491112345678?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios."
+         class="bg-rojo hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition">💬 Escribinos por WhatsApp</a>
+    </div>
+  </header>
 
-    <!-- 2️⃣ Servicios -->
-    <section id="servicios" class="py-16 bg-gris">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-10 text-negro">Nuestros Servicios</h2>
-        <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
-          <!-- Card -->
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png"
-              alt="Retirada de Vehículos"
-              class="mx-auto mb-4 w-16"
-            />
-            <h3 class="text-xl font-semibold mb-2">Retirada de Vehículos</h3>
-            <p>Gestionamos el retiro y baja definitiva sin complicaciones.</p>
-          </div>
+  <!-- 2️⃣ Repuestos -->
+  <section id="repuestos" class="py-16 bg-gris">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-negro animate__animated" data-animate="animate__fadeIn">Nuestros Repuestos</h2>
+      <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto text-left">
+        <!-- Carrocería -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition animate__animated" data-animate="animate__fadeInUp" data-delay="0.2s">
+          <h3 class="text-rojo text-xl font-semibold mb-4">Repuestos de Carrocería</h3>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Puertas</li>
+            <li>Portones</li>
+            <li>Capots</li>
+            <li>Guardabarros</li>
+            <li>Paragolpes</li>
+            <li>Espejos</li>
+            <li>Techos</li>
+            <li>Zócalos</li>
+          </ul>
+        </div>
 
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2323/2323616.png"
-              alt="Venta de Recambios"
-              class="mx-auto mb-4 w-16"
-            />
-            <h3 class="text-xl font-semibold mb-2">Venta de Recambios</h3>
-            <p>Repuestos originales con garantía y entrega rápida.</p>
-          </div>
+        <!-- Mecánica -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition animate__animated" data-animate="animate__fadeInUp" data-delay="0.4s">
+          <h3 class="text-rojo text-xl font-semibold mb-4">Repuestos de Mecánica</h3>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Motores</li>
+            <li>Cajas de velocidades</li>
+            <li>Bombas de nafta</li>
+            <li>Compresores de aire</li>
+            <li>Servo de freno</li>
+            <li>Inyectores de combustible</li>
+            <li>Diferencial</li>
+            <li>Columna de dirección</li>
+          </ul>
+        </div>
 
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/138/138281.png"
-              alt="Tasación y Compra"
-              class="mx-auto mb-4 w-16"
-            />
-            <h3 class="text-xl font-semibold mb-2">Tasación y Compra</h3>
-            <p>Recibí una cotización inmediata por tu vehículo.</p>
-          </div>
+        <!-- Interior -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition animate__animated" data-animate="animate__fadeInUp" data-delay="0.6s">
+          <h3 class="text-rojo text-xl font-semibold mb-4">Repuestos de Interior</h3>
+          <ul class="list-disc list-inside space-y-1 text-gray-700">
+            <li>Airbag (todos)</li>
+            <li>Sensores de estacionamiento</li>
+            <li>Levanta cristales</li>
+            <li>Ramal eléctrico</li>
+            <li>Pantallas interiores</li>
+            <li>Butacas</li>
+            <li>Paneles</li>
+            <li>Cerrajería (interior y exterior)</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 3️⃣ Beneficios -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-10 text-negro">
-          Beneficios de elegirnos
-        </h2>
-        <div class="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
-          <div class="flex flex-col items-center">
-            <div
-              class="bg-rojo text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl mb-4"
-            >
-              ⚡
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Atención inmediata</h3>
-            <p class="text-gray-600">
-              Respondemos tus consultas al instante por WhatsApp.
-            </p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div
-              class="bg-rojo text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl mb-4"
-            >
-              🛠️
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Gestión sin estrés</h3>
-            <p class="text-gray-600">
-              Nos encargamos de todo el proceso de baja o compra.
-            </p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div
-              class="bg-rojo text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl mb-4"
-            >
-              💬
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Asesoramiento personal</h3>
-            <p class="text-gray-600">
-              Te guiamos paso a paso con atención personalizada.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4️⃣ Testimonios -->
-    <section class="py-16 bg-gris">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-10 text-negro">Opiniones Reales</h2>
-        <div
-          class="flex gap-6 overflow-x-auto md:grid md:grid-cols-3 max-w-6xl mx-auto snap-x snap-mandatory"
-        >
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md min-w-[280px] snap-center"
-          >
-            <div class="flex justify-center mb-2 text-yellow-400">★★★★★</div>
-            <p>
-              “Excelente atención y rapidez, gestionaron todo por mí sin moverme
-              de casa.”
-            </p>
-            <h4 class="mt-4 font-semibold text-negro">– Carlos M.</h4>
-          </div>
-
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md min-w-[280px] snap-center"
-          >
-            <div class="flex justify-center mb-2 text-yellow-400">★★★★★</div>
-            <p>“Muy buena experiencia, compraron mi coche en el día.”</p>
-            <h4 class="mt-4 font-semibold text-negro">– Laura P.</h4>
-          </div>
-
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md min-w-[280px] snap-center"
-          >
-            <div class="flex justify-center mb-2 text-yellow-400">★★★★★</div>
-            <p>“Conseguí un repuesto original a mitad de precio. Perfecto.”</p>
-            <h4 class="mt-4 font-semibold text-negro">– Martín G.</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5️⃣ CTA -->
-    <section class="py-20 bg-rojo text-white text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        ¿Listo para resolver tu gestión automotriz?
-      </h2>
-      <p class="mb-8 text-lg">
-        Contactanos por WhatsApp y obtené atención inmediata
+  <!-- 3️⃣ Historia / Sobre RO-DES -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center max-w-4xl animate__animated" data-animate="animate__fadeIn">
+      <h2 class="text-3xl font-bold mb-6 text-negro">Quiénes Somos</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        A lo largo de más de 30 años y 2 generaciones, mediando entre el desarmadero y el consumidor de manera casi análoga, decidimos modernizarnos fundando <strong class="text-rojo">RO-DES (Red Operativa de Desarmes)</strong> para lograr una mejor atención y alcanzar a más futuros clientes.
       </p>
-      <div class="flex justify-center gap-4 flex-wrap">
-        <a
-          href="https://wa.me/5491112345678?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios."
-          class="bg-white text-rojo px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
-        >
-          📲 Contactanos por WhatsApp
-        </a>
-        <a
-          href="#"
-          class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-rojo transition"
-        >
-          📸 Seguinos en Instagram
-        </a>
-      </div>
-    </section>
-
-    <!-- 6️⃣ Footer -->
-    <footer class="bg-negro text-white py-10 text-center">
-        <img
-          src="images/logo.png"
-          alt="Logo"
-          class="mx-auto mb-6 w-40 md:w-48"
-        />
-      <div class="space-y-2">
-        <p><strong>📍 Dirección:</strong> Av. Siempre Viva 123, Ciudad</p>
-        <p><strong>📞 Teléfono:</strong> +54 9 11 1234 5678</p>
-        <p><strong>🕒 Horario:</strong> Lunes a Viernes de 9 a 18 hs</p>
-      </div>
-      <div class="flex justify-center gap-6 mt-6">
-        <a href="#" class="hover:text-rojo">Instagram</a>
-        <a href="#" class="hover:text-rojo">Facebook</a>
-        <a href="#" class="hover:text-rojo">WhatsApp</a>
-      </div>
-      <p class="mt-6 text-sm opacity-75">
-        © 2025 Tu Empresa. Todos los derechos reservados.
+      <p class="text-gray-700 text-lg">
+        <strong class="text-rojo">RO-DES Argentina:</strong> Somos el nexo entre los 326 desarmaderos inscriptos de Argentina y el consumidor, así como también de las compañías de seguro, logrando la mayor variedad y mejor precio de repuestos originales a solo un WhatsApp de distancia.
       </p>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Botón flotante WhatsApp -->
-    <a
-      href="https://wa.me/5491112345678?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios."
-      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl transition"
-      target="_blank"
-      aria-label="WhatsApp"
-    >
-      💬
-    </a>
-  </body>
+  <!-- 4️⃣ Diferenciadores / Valores -->
+  <section class="py-16 bg-gris">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-negro animate__animated" data-animate="animate__fadeIn">Por qué elegirnos</h2>
+      <div class="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
+        <div class="flex flex-col items-center animate__animated" data-animate="animate__zoomIn" data-delay="0.2s">
+          <div class="bg-rojo text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl mb-4">✅</div>
+          <h3 class="text-xl font-semibold mb-2">Repuestos con garantía</h3>
+          <p class="text-gray-600">Todos nuestros repuestos son originales y cuentan con respaldo.</p>
+        </div>
+
+        <div class="flex flex-col items-center animate__animated" data-animate="animate__zoomIn" data-delay="0.4s">
+          <div class="bg-rojo text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl mb-4">🤝</div>
+          <h3 class="text-xl font-semibold mb-2">Seriedad y transparencia</h3>
+          <p class="text-gray-600">Operamos de manera clara, confiable y profesional.</p>
+        </div>
+
+        <div class="flex flex-col items-center animate__animated" data-animate="animate__zoomIn" data-delay="0.6s">
+          <div class="bg-rojo text-white w-20 h-20 flex items-center justify-center rounded-full text-3xl mb-4">🚚</div>
+          <h3 class="text-xl font-semibold mb-2">Envíos a todo el país</h3>
+          <p class="text-gray-600">Recibí tus repuestos donde los necesites, rápido y seguro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 5️⃣ Testimonios -->
+<section class="py-16 bg-gris">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10 text-negro animate__animated" data-animate="animate__fadeIn">Opiniones Reales</h2>
+    <div class="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-2xl shadow-md animate__animated" data-animate="animate__fadeInUp">
+        <div class="flex justify-center mb-2 text-yellow-400">★★★★★</div>
+        <p>“Excelente atención y rapidez, gestionaron todo por mí sin moverme de casa.”</p>
+        <h4 class="mt-4 font-semibold text-negro">– Carlos M.</h4>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md animate__animated" data-animate="animate__fadeInUp" data-delay="0.2s">
+        <div class="flex justify-center mb-2 text-yellow-400">★★★★★</div>
+        <p>“Muy buena experiencia, compraron mi coche en el día.”</p>
+        <h4 class="mt-4 font-semibold text-negro">– Laura P.</h4>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md animate__animated" data-animate="animate__fadeInUp" data-delay="0.4s">
+        <div class="flex justify-center mb-2 text-yellow-400">★★★★★</div>
+        <p>“Conseguí un repuesto original a mitad de precio. Perfecto.”</p>
+        <h4 class="mt-4 font-semibold text-negro">– Martín G.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- 6️⃣ CTA -->
+  <section class="py-20 bg-rojo text-white text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 animate__animated" data-animate="animate__fadeInDown">¿Listo para resolver tu gestión automotriz?</h2>
+    <p class="mb-8 text-lg animate__animated" data-animate="animate__fadeInDown" data-delay="0.2s">Contactanos por WhatsApp y obtené atención inmediata</p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="https://wa.me/5491112345678?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios."
+         class="bg-white text-rojo px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition animate__animated" data-animate="animate__fadeInUp" data-delay="0.4s">📲 Contactanos por WhatsApp</a>
+      <a href="#"
+         class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-rojo transition animate__animated" data-animate="animate__fadeInUp" data-delay="0.6s">📸 Seguinos en Instagram</a>
+    </div>
+  </section>
+
+  <!-- 7️⃣ Footer -->
+  <footer class="bg-negro text-white py-10 text-center">
+    <img src="images/logo.png" alt="Logo" class="mx-auto mb-6 w-40 md:w-48" />
+    <div class="space-y-2">
+      <p><strong>📍 Dirección:</strong> Av. Siempre Viva 123, Ciudad</p>
+      <p><strong>📞 Teléfono:</strong> +54 9 11 1234 5678</p>
+      <p><strong>🕒 Horario:</strong> Lunes a Viernes de 9 a 18 hs</p>
+    </div>
+    <div class="flex justify-center gap-6 mt-6">
+      <a href="#" class="hover:text-rojo">Instagram</a>
+      <a href="#" class="hover:text-rojo">Facebook</a>
+      <a href="#" class="hover:text-rojo">WhatsApp</a>
+    </div>
+    <p class="mt-6 text-sm opacity-75">© 2025 RO-DES. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5491112345678?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios."
+     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl transition"
+     target="_blank" aria-label="WhatsApp">💬</a>
+
+  <!-- Script de animaciones con scroll -->
+  <script>
+    const animateElements = document.querySelectorAll('.animate__animated');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const animation = el.dataset.animate;
+          const delay = el.dataset.delay || '0s';
+          el.style.animationDelay = delay;
+          el.classList.add(animation);
+          el.style.opacity = 1;
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    animateElements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>

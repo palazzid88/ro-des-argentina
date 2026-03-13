@@ -10,12 +10,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <style>
-    :root {
-      --color-rojo: #d01318;
-      --color-gris: #f5f5f5;
-      --color-negro: #111111;
-      --color-blanco: #ffffff;
-    }
+:root {
+  --color-rojo: #042698;
+  --color-rojo-hover: #031c6e;
+  --color-gris: #f5f5f5;
+  --color-negro: #111111;
+  --color-blanco: #ffffff;
+}
     .bg-rojo { background-color: var(--color-rojo); }
     .text-rojo { color: var(--color-rojo); }
     .bg-gris { background-color: var(--color-gris); }
@@ -28,36 +29,53 @@
 <!-- 1️⃣ Encabezado principal -->
 <!-- 1️⃣ Encabezado principal -->
 <header class="relative bg-[url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center text-white">
-  <!-- Capa oscura -->
+
+  <!-- Overlay -->
   <div class="absolute inset-0 bg-black/70"></div>
 
   <!-- Contenido -->
-  <div class="relative z-10 container mx-auto px-6 py-28 text-center animate__animated" data-animate="animate__fadeInDown">
+  <div class="relative z-10 container mx-auto px-6 py-28 text-center">
 
     <!-- Texto superior -->
-    <p class="text-sm md:text-base tracking-widest uppercase text-gray-300 mb-4">🚗 Red Operativa de Desarmes</p>
+    <p class="text-sm md:text-base tracking-widest uppercase text-gray-300 mb-6">
+      🚗 Red Operativa de Desarmes
+    </p>
 
-    <!-- Logo -->
-    <img src="images/logo.png" alt="Logo" class="mx-auto mb-8 w-56 md:w-64 drop-shadow-lg" />
+<!-- Logo --> 
+ <div class="flex justify-center mb-10"> 
+  <div class="bg-white px-8 py-6 rounded-xl shadow-lg"> 
+    <img src="images/logo-b.png" alt="RO-DES Argentina" class="w-72 md:w-80 h-auto" > 
+  </div> 
+</div>
 
-    <!-- Título principal -->
-    <h1 class="text-3xl md:text-4xl font-bold mb-3">Somos la conexion directa y filtrada entre las plantas recicladoras de automotores (desarmes) y vos</h1>
+    <!-- Título -->
+    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+      Somos la conexión directa entre desarmaderos<br class="hidden md:block">
+      y quienes necesitan repuestos originales
+    </h1>
 
     <!-- Subtítulo -->
     <p class="text-base md:text-lg mb-8 text-gray-200 max-w-2xl mx-auto">
-      Conformamos una red que conecta más de <strong>300 desarmaderos en toda Argentina</strong> con consumidores y aseguradoras, ofreciendo así repuestos originales al mejor precio, con atención rápida por WhatsApp.
+      Conectamos más de <strong>300 desarmaderos registrados en toda Argentina</strong>
+      con consumidores y aseguradoras, facilitando el acceso a repuestos originales
+      con atención rápida por WhatsApp.
     </p>
 
-    <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/5492234261414?text=Hola!%20Quiero%20consultar%20por%20repuestos."
-       class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg hover:shadow-xl">
-       💬 Consultá por repuestos
-    </a>
+<!-- Botón -->
+<a href="https://wa.me/5492234261414?text=Hola!%20Quiero%20consultar%20por%20repuestos."
+   class="inline-block bg-rojo hover:bg-[#031c6e] text-white px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg hover:shadow-xl">
+   💬 Consultar repuestos por WhatsApp
+</a>
 
-    <!-- Texto adicional debajo del botón -->
-    <p class="mt-4 text-gray-300 text-sm md:text-base">🧰 Repuestos originales de todo el país</p>
+    <!-- Texto inferior -->
+    <p class="mt-6 text-gray-300 text-sm md:text-base">
+      🧰 Repuestos originales de desarmaderos de todo el país
+    </p>
+
   </div>
+
 </header>
+
 
 
 
@@ -220,8 +238,11 @@
     <div class="flex justify-center gap-4 flex-wrap">
       <a href="https://wa.me/5492234261414?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios."
          class="bg-white text-rojo px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition animate__animated" data-animate="animate__fadeInUp" data-delay="0.4s">📲 Contactanos por WhatsApp</a>
-      <a href="https://www.instagram.com/rodesargentina/"
-         class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-rojo transition animate__animated" data-animate="animate__fadeInUp" data-delay="0.6s">📸 Seguinos en Instagram</a>
+      <a href="https://instagram.com/rodes.argentina"
+        class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#042698] transition animate__animated"
+        data-animate="animate__fadeInUp" data-delay="0.6s">
+        📸 Seguinos en Instagram
+      </a>
     </div>
   </section>
 
